@@ -61,8 +61,16 @@ public class StackAsLinkedList {
     public int peek() 
     { 
         //Write code to just return the topmost element without removing it.
+        if(root==null)
+        {
+            System.out.println("Stack is empty");
+            return 0;
+        }
+        else
+        {
         StackNode temp= root;
         return temp.data;
+        }
     } 
   
 	//Driver code

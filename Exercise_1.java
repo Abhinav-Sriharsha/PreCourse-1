@@ -1,3 +1,6 @@
+// Time complexity O(1) for each operation
+// Problems faced: Unable to calculate the time and spce complexity properly
+
 class Stack { 
     //Please read sample.java file before starting.
   //Kindly include Time and Space complexity at top of each file
@@ -49,7 +52,13 @@ class Stack {
     int peek() 
     { 
         //Write your code here
-        return top;
+        if(top==-1)
+        {
+            System.out.println("Stack is empty");
+            return 0;
+        }
+        else
+            return a[top];
     } 
 } 
   
@@ -62,5 +71,6 @@ class Main {
         s.push(20); 
         s.push(30); 
         System.out.println(s.pop() + " Popped from stack"); 
+        
     } 
 }
